@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brew calc</title>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+    .container {
+      max-width: 300px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container mt-5">
+
+  <div class="form-group">
+    <label for="malt_sugar">Sugar from malt (g)</label>
+    <input class="form-control" id="malt_sugar" type="number" autofocus>
+  </div>
+
+  <div class="form-group">
+    <label for="added_sugar">Added sugar (g)</label>
+    <input class="form-control" id="added_sugar" type="number">
+  </div>
+
+  <div class="form-group">
+    <label for="water">Water (ml)</label>
+    <input class="form-control" id="water" type="number">
+  </div>
+
+  <div class="form-group">
+    <button class="form-control btn-success" id="calc" type="button">Estimate</button>
+  </div>
+
+  <div class="form-group">
+  <p>Estimated alcohol </p>
+  <h2 class="title" id="estimate"></h2>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
